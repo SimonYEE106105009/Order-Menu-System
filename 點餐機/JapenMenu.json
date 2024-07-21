@@ -1,0 +1,249 @@
+{
+    "MenuList": [
+      {
+        "Type": "主餐",
+        "Food": [
+          {
+            "Name": "鰻魚飯",
+            "Price": 150
+          },
+          {
+            "Name": "天婦羅飯",
+            "Price": 130
+          },
+          {
+            "Name": "豬排飯",
+            "Price": 120
+          },
+          {
+            "Name": "壽司套餐",
+            "Price": 200
+          },
+          {
+            "Name": "照燒雞排飯",
+            "Price": 110
+          },
+          {
+            "Name": "親子丼",
+            "Price": 100
+          }
+        ]
+      },
+      {
+        "Type": "副食",
+        "Food": [
+          {
+            "Name": "味噌湯",
+            "Price": 30
+          },
+          {
+            "Name": "章魚燒",
+            "Price": 50
+          },
+          {
+            "Name": "炸豆腐",
+            "Price": 40
+          },
+          {
+            "Name": "烤雞肉串",
+            "Price": 45
+          }
+        ]
+      },
+      {
+        "Type": "飲料",
+        "Food": [
+          {
+            "Name": "綠茶",
+            "Price": 25
+          },
+          {
+            "Name": "玄米茶",
+            "Price": 30
+          },
+          {
+            "Name": "梅子酒",
+            "Price": 50
+          },
+          {
+            "Name": "清酒",
+            "Price": 60
+          }
+        ]
+      },
+      {
+        "Type": "點心",
+        "Food": [
+          {
+            "Name": "抹茶冰淇淋",
+            "Price": 40
+          },
+          {
+            "Name": "紅豆湯圓",
+            "Price": 35
+          },
+          {
+            "Name": "豆乳布丁",
+            "Price": 45
+          },
+          {
+            "Name": "大福",
+            "Price": 30
+          }
+        ]
+      }
+    ],
+    "DiscountList": [
+      {
+        "Name": "鰻魚飯買2送1",
+        "StrategyName": "點餐機.Strategy.Strategies.BuyNGiveMStrategy",
+        "MainFood": "鰻魚飯",
+        "SubFood": "",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 2,
+        "BuySubNumber": 0,
+        "GiveNumber": 1,
+        "Price": 0,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "豬排飯搭綠茶$130",
+        "StrategyName": "點餐機.Strategy.Strategies.SetStrategy",
+        "MainFood": "豬排飯",
+        "SubFood": "綠茶",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 0,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 130,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "天婦羅飯買三個$300",
+        "StrategyName": "點餐機.Strategy.Strategies.DiscountpriceStrategy",
+        "MainFood": "天婦羅飯",
+        "SubFood": "",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 3,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 300,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "照燒雞排飯買5個打8折",
+        "StrategyName": "點餐機.Strategy.Strategies.DiscountStrategy",
+        "MainFood": "照燒雞排飯",
+        "SubFood": "",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 5,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 0,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0.8
+      },
+      {
+        "Name": "每買兩個親子丼送味噌湯",
+        "StrategyName": "點餐機.Strategy.Strategies.BuyNGiveMStrategy",
+        "MainFood": "親子丼",
+        "SubFood": "",
+        "Drinks": [],
+        "GiveFood": "味噌湯",
+        "BuyNumber": 2,
+        "BuySubNumber": 0,
+        "GiveNumber": 1,
+        "Price": 0,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "壽司套餐加購章魚燒$230",
+        "StrategyName": "點餐機.Strategy.Strategies.SetStrategy",
+        "MainFood": "壽司套餐",
+        "SubFood": "章魚燒",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 0,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 230,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "消費滿額500折扣50",
+        "StrategyName": "點餐機.Strategy.Strategies.FullStrategies",
+        "MainFood": "",
+        "SubFood": "",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 0,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 0,
+        "TotalPrice": 500,
+        "DiscountPrice": 50,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "全場消費打9折",
+        "StrategyName": "點餐機.Strategy.Strategies.FullPercentStragegy",
+        "MainFood": "",
+        "SubFood": "",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 0,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 0,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0.9
+      },
+      {
+        "Name": "豬排飯加購紅豆湯圓$150",
+        "StrategyName": "點餐機.Strategy.Strategies.SetStrategy",
+        "MainFood": "豬排飯",
+        "SubFood": "紅豆湯圓",
+        "Drinks": [],
+        "GiveFood": "",
+        "BuyNumber": 0,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 150,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      },
+      {
+        "Name": "飲料任選三杯$70",
+        "StrategyName": "點餐機.Strategy.Strategies.DrinkDiscount",
+        "MainFood": "",
+        "SubFood": "",
+        "Drinks": ["綠茶", "玄米茶", "梅子酒", "清酒"],
+        "GiveFood": "",
+        "BuyNumber": 3,
+        "BuySubNumber": 0,
+        "GiveNumber": 0,
+        "Price": 70,
+        "TotalPrice": 0,
+        "DiscountPrice": 0,
+        "DiscountPrecent": 0
+      }
+    ]
+  }
+  
